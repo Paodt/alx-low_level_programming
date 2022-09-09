@@ -2,14 +2,15 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - assign a random number to the  variable n
+ * main - Entry point
+ * description: assign a random number to the  variable n
  * Return: Always 0 (success)
 */
-int main (void)
+int main(void)
 {
 	int n, m;
 
-	srand (time(0));
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	m = n % 10;
 	if (m > 5)
