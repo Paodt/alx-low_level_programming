@@ -2,9 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * more headers goes there
- * betty style doc for function main goes there
- * main -Entry point
+ * main - Entry point
+ * description:  betty style doc for function main goes there
  * Return: Always  0 (success)
 */
 int main(void)
@@ -13,7 +12,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
+	
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
