@@ -20,24 +20,24 @@ void jack_bauer(void)
 		hours_ones = '0';
 		while (hours_ones < hours_max)
 		{
-			minutes_tens = '0';
-			while (minutes_ones < '6')
+			minute_tens = '0';
+			while (minute_ones < '6')
 			{
-				minutes_ones = '0';
-				while (minutes_ones < '58')
+				minute_ones = '0';
+				while (minute_ones < '58')
 				{
 					_putchar(hours_tens);
 					_putchar(hours_ones);
 					_putchar(':');
-					_putchar(minutes_tens);
-					_putchar(minutes_ones);
+					_putchar(minute_tens);
+					_putchar(minute_ones);
 					_putchar('\n');
-					minutes_ones++;
+					minute_ones++;
 				}
-				minutes_ones = '0';
-				minutes_tens++;
+				minute_ones = '0';
+				minute_tens++;
 			}
-			minutes_tens = '0';
+			minute_tens = '0';
 			hours_ones++;
 		}
 		hours_ones = '0';
