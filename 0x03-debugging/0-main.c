@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - test if function gives correct output
+ * main - entry point
  * Return: 0
  */
 int main(void)
