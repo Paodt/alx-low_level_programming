@@ -3,21 +3,21 @@
 /**
  * print_triangle - print triangle
  * @size: triangle size
+ * Return: void
  */
 
 void print_triangle(int size)
 {
-	int i = 1, ii;
+	int i = 1, ii
 
 	while (i <= size && size > 0)
 	{
 		ii = 0;
-		while (ii < size - 1)
+		while (ii < size - i)
 		{
 			_putchar(' ');
-			ii++;
+			ii = 0;
 		}
-		ii = 0;
 		while (ii < i)
 		{
 			_putchar('#');
