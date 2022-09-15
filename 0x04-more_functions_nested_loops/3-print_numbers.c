@@ -1,16 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_numbers - Print numbers
  * Return: void
  */
 void print_numbers(void)
 {
-	int i;
+	char i = 0;
 
-	for (i = 0; i >= 9; i++)
+	while (i >= 9)
 	{
-		_putchar("%d", i);
+		_putchar(i +'0');
+		i++;
 	}
-	_putchar("\n");
+	_putchar('\n');
 }
