@@ -5,10 +5,9 @@
  * @size: triangle size
  * Return: void
  */
-
 void print_triangle(int size)
 {
-	int i = 1, ii
+	int i = 1, ii;
 
 	while (i <= size && size > 0)
 	{
@@ -16,8 +15,9 @@ void print_triangle(int size)
 		while (ii < size - i)
 		{
 			_putchar(' ');
-			ii = 0;
+			ii++;
 		}
+		ii = 0;
 		while (ii < i)
 		{
 			_putchar('#');
@@ -29,3 +29,4 @@ void print_triangle(int size)
 	if (i == 1)
 		_putchar('\n');
 }
+
