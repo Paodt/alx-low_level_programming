@@ -13,7 +13,7 @@ int power(int n, int a)
 		if (a * (n / a) == n)
 			return (a);
 		else
-			return(-1);
+			return (-1);
 	}
 	return (0 + power(n, a + 1));
 }
@@ -32,6 +32,5 @@ int _sqrt_recursion(int n)
 		return (0);
 	if (n == 1)
 		return (1);
-	
 	return (power(n, 2));
 }
