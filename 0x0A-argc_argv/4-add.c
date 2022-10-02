@@ -3,8 +3,8 @@
 #include <ctype.h>
 /**
  * main - program that add numbers
- * argc: argument count
- * argv: argument vector
+ * @argc: argument count
+ * @argv: argument vector
  * Return: 0 if no number is passed
  */
 int main(int argc, char *argv[])
@@ -15,12 +15,11 @@ int main(int argc, char *argv[])
 	{
 		for (g = 0; argv[i][g] != '\0'; g++)
 		{
-			if(!isdigit(argv[i][g]))
+			if (!isdigit(argv[i][g]))
 			{
 				printf("Error\n");
 				return (1);
 			}
-	
 		sum += atoi(argv[i]);
 		}
 	}
