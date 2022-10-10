@@ -5,7 +5,7 @@
  * @d: first variable
  * @name: second
  * @age: third
- * owner: fourth
+ * @owner: fourth
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
