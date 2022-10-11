@@ -6,6 +6,7 @@
  * @name: first variable
  * @age: second variable
  * @owner: third
+ * struct dog dog_t - new type
  */
 
 struct dog
@@ -18,5 +19,7 @@ struct dog
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
+
+typedef struct dog dog_t;
 
 #endif
