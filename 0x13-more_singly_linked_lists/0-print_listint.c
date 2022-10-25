@@ -5,16 +5,16 @@
  * @h: head of a list.
  * Return: numbers of nodes.
  */
-
 size_t print_listint(const listint_t *h)
 {
-	size_t nnodes = 0;
+	const listint_t *cursor = h;
+	size_t count = 0;
 
-	while (h != NULL)
+	while (cursor != NULL)
 	{
-		printf("%d\n", h->n);
-		h = h->next;
-		nnodes++;
+		printf("%d\n", cursor->n);
+		count += 1;
+		cursor = cursor->next;
 	}
-	return (nnodes);
+	return (count);
 }
